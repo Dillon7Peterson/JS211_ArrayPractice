@@ -39,39 +39,44 @@ let stringOfCars = totalCars.join(' ');
 // Run the program.
 
 let totalCarsTwo = stringOfCars.split();
-console.log(totalCarsTwo);
+//console.log(totalCarsTwo);
 
 // Use the reverse method to create an array carsInReverse which is the array totalCars in reverse.
 // Run the program.
-console.log('forward', totalCars);
+//console.log('forward', totalCars);
 
 let carsInReverse = totalCars.reverse();
-console.log('reversed', carsInReverse);
+//console.log('reversed', carsInReverse);
 
 
 // Use the sort method to put the array carsInReverse into alphabetical order.
 // Based on the types of cars you used, predict which item in the array should be at index 0.
 // Use the following code to confirm or reject your prediction:
 
-console.log(carsInReverse.sort());
+//3console.log(carsInReverse.sort());
 
 // Use the slice method to remove Ford and Honda from the carsInReverse array and move them into a new array called removedCars.
 // .slice()
+let removedCars = carsInReverse.slice(6, 8);
+//console.log('the removed cars are', removedCars);
 
 // Use the splice method to remove the 2nd and 3rd items in the array carsInReverse and add Ford and Honda in their place.
-// .splice()
+carsInReverse.splice(1, 2, 'Ford', 'Honda');
+//console.log(carsInReverse);
 
 // Use the push method to add the types of cars that you removed using the splice method to the carsInReverse array.
-// .push()
+carsInReverse.push('Kia', 'Mercedes');
+//console.log(carsInReverse);
 
 // Use the pop method to remove and console.log the last item in the array carsInReverse.
-// .pop()
+
+//console.log(carsInReverse.pop());
 
 // Use the shift method to remove and console.log the first item in the array carsInReverse.
-// .shift()
+ //console.log(carsInReverse.shift());
 
 // Use the unshift method to add a new type of car to the array carsInReverse.
-// .unshift()
+ //console.log(carsInReverse.unshift('red wagon', 'jeep'));
 
 
 // Create an array called numbers with the following items: 23, 45, 0, 2 
@@ -80,4 +85,18 @@ console.log(carsInReverse.sort());
 //  Build a function that will add 2 and then use .forEach() to pass each number into your freshly built function. 
 //  const numbers = [23, 45, 0 , 2, 8, 44, 100, 1, 3, 91, 34]
 
-// .forEach()
+let numbers = [23, 45, 0, 2, 8, 44, 100, 1, 3, 91, 34];
+
+numbers.forEach(function(item, index, array){
+
+});
+
+console.log(numbers);
+
+// function addTwo(){
+//       for(let i=0; i<numbers.length; i++) {
+       
+//        return (newNumbers); 
+//       } 
+// }
+
